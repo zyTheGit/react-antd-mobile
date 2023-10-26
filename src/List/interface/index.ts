@@ -2,7 +2,7 @@ type RowKeyFunc = (arg: any, index: number) => string | number;
 
 type ReactNodeOrFunc = React.ReactNode | ((record: any) => React.ReactNode);
 
-interface IList {
+interface List {
   header?: React.ReactNode;
   mode?: 'default' | 'card';
   style?: React.CSSProperties;
@@ -13,7 +13,7 @@ interface IPagination {
   pageSize?: number;
 }
 
-interface IListItem {
+interface ListItem {
   clickable?: boolean;
   disabled?: boolean;
   arrow?: boolean | React.ReactNode;
@@ -62,8 +62,8 @@ export interface ListProps {
    */
   immediate?: boolean;
   requestParams?: Record<string, any>;
-  listProps?: IList;
-  listItemProps?: IListItem;
+  listProps?: List;
+  listItemProps?: ListItem;
   infiniteScrollProps?: IInfiniteScroll;
   emptyProps?: IEmpty;
   /**
