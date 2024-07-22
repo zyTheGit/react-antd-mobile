@@ -6,3 +6,4 @@ export { default as PopupSelect } from './PopupSelect';
 export { default as Select } from './Select';
 export { default as Spin } from './Spin';
 export { default as StackChart } from './StackChart';
+export { default as XScrollBox } from './XScrollBox';
